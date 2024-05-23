@@ -18,7 +18,7 @@ public class CustomerProduct {
 
     @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY, targetEntity = Customer.class)
-    @JoinColumn(name = "customerId", nullable = false)
+    @JoinColumn(name = "customerId", nullable = true)
     private Customer customer;
 
 }
