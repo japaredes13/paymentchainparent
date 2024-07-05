@@ -12,7 +12,7 @@
     <artifactId>infraestructuradomain</artifactId>
     <packaging>pom</packaging>
 
-   <properties>
+    <properties>
        <!--spring cloud version, please check the table https://spring.io/projects/spring-cloud compatibility version with spring boot framework-->
           <spring-cloud-dependencies.version>2023.0.0</spring-cloud-dependencies.version>
     </properties>
@@ -30,5 +30,10 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    
+
+    <modules>
+        <module>configserver</module>
+        <module>eurekaserver</module>
+        <module>springadmin</module>
+    </modules>
 </project>
