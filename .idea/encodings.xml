@@ -7,6 +7,14 @@
     <file url="file://$PROJECT_DIR$/businessdomain/product/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/businessdomain/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/businessdomain/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/businessdomain/transaction/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/businessdomain/transaction/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/infraestructuradomain/configserver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/infraestructuradomain/configserver/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/infraestructuradomain/eurekaserver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/infraestructuradomain/eurekaserver/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/infraestructuradomain/springadmin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/infraestructuradomain/springadmin/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/infraestructuradomain/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/infraestructuradomain/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
