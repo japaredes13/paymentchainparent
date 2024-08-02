@@ -1,6 +1,12 @@
-
+## YAML Template.
+---
 server:
   port: 8080
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER:http://localhost:8761/eureka}
 
 logging:
   level:
@@ -8,10 +14,12 @@ logging:
     reactor.netty.http.client: DEBUG
 
 spring:
+  application:
+    name: apigateway
   cloud:
     gateway:
       routes:
         - id: customer_service
-          uri: https://localhost:8081
+          uri: lb://businessdomain-customer
           predicates:
-            - Path=/customer/**
+            - Path=/**
