@@ -45,7 +45,7 @@ public class CustomerController {
                 env.getProperty("custom.activeprofileName"));
     }
 
-    @GetMapping("/")
+    @GetMapping("")
     public ResponseEntity<?> findAll(){
         List<Customer> customers = customerRepository.findAll();
         if (customers.isEmpty())
@@ -62,7 +62,7 @@ public class CustomerController {
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
-    @PostMapping("/")
+    @PostMapping("")
     public ResponseEntity<?> create(@RequestBody Customer input) throws BussinesRuleException, UnknownHostException {
         Customer customer = transactionClient.createCustomer(input);
         return ResponseEntity.status(HttpStatus.CREATED).body(customer);
