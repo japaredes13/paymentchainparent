@@ -115,6 +115,26 @@ services:
     depends_on:
       - registry-discovery
 
+##########################################################################
+#keycloack service
+##########################################################################
+  keycloak:
+    container_name: keycloak-adapter
+    image: paymentchain/microservice-docker-keycloakadapter:0.0.1-SNAPSHOT
+    #All projets will have a variable value  DEUREKA_SERVER this tell where find a registry-discovery server
+    environment:
+      - JAVA_OPTS=
+        -Xms256M
+        -Xmx256M
+        -DEUREKA_SERVER=http://registry-discovery:8761/eureka/
+        -DKEYCLOAK_SERVER=http://keycloak_server:8080/realms/
+        -DKEYCLOAK_REAL_ID=OHBI8b9ysK1XZEjUufNSXDNDisPfXvNQHuHtYx9CBmA
+      #-Dspring.cloud.config.server.native.searchLocations=/var/config-data
+    depends_on:
+      - registry-discovery
+    ports:
+      - 8088:8088
+
   postgres_db:
     container_name: postgres
     image: postgres:latest
@@ -127,3 +147,19 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: qwerty
       POSTGRES_DB: postgres
+
+
+##########################################################################
+#keycloack Server
+##########################################################################
+  keycloak_server:
+    container_name: keycloak-server
+    image: quay.io/keycloak/keycloak:25.0.1
+    restart: always
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+      DB_VENDOR: H2
+    ports:
+      - 8091:8080
+    command: start-dev

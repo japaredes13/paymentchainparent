@@ -15,6 +15,8 @@
     <file url="file://$PROJECT_DIR$/infraestructuradomain/configserver/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/infraestructuradomain/eurekaserver/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/infraestructuradomain/eurekaserver/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/infraestructuradomain/keycloakadapter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/infraestructuradomain/keycloakadapter/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/infraestructuradomain/springadmin/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/infraestructuradomain/springadmin/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/infraestructuradomain/src/main/java" charset="UTF-8" />

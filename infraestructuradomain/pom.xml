@@ -36,5 +36,6 @@
         <module>eurekaserver</module>
         <module>springadmin</module>
         <module>apigateway</module>
+        <module>keycloakadapter</module>
     </modules>
 </project>
