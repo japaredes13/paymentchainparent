@@ -32,7 +32,11 @@
 			<optional>true</optional>
 			<version>1.18.28</version>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>org.glassfish.jersey.core</groupId>
+            <artifactId>jersey-common</artifactId>
+        </dependency>
+    </dependencies>
 
 
 	<build>
